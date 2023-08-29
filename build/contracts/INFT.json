@@ -1,0 +1,179 @@
+{
+  "contractName": "INFT",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "uri",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_tokenId\",\"type\":\"uint256\"}],\"name\":\"uri\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/minting/interfaces/INFT.sol\":\"INFT\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/minting/interfaces/INFT.sol\":{\"keccak256\":\"0xb6fcf38db7397c14db25d94859f1e7f1d2a6b8afd90143d0669457a058924464\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://86d43ea30cd33ef02db655387dcbf3886fd64e95986988c09818a217f1e14893\",\"dweb:/ipfs/QmenJdG6guJWUjupydNd1AidPRBmfPFbmsRzyeMsojZXRV\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.2;\n\ninterface INFT {\n    function uri(uint256 _tokenId) external view returns (string memory);\n}\n\n",
+  "sourcePath": "/Users/huy8bit/Desktop/DRIVE/JOB/ATOM SOLUTION/TASK/inz-dapp-api/dev/inz-smc/contracts/minting/interfaces/INFT.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/minting/interfaces/INFT.sol",
+    "exportedSymbols": {
+      "INFT": [
+        19359
+      ]
+    },
+    "id": 19360,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 19351,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:80"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "INFT",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 19359,
+        "linearizedBaseContracts": [
+          19359
+        ],
+        "name": "INFT",
+        "nameLocation": "67:4:80",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "0e89341c",
+            "id": 19358,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "uri",
+            "nameLocation": "87:3:80",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 19354,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19353,
+                  "mutability": "mutable",
+                  "name": "_tokenId",
+                  "nameLocation": "99:8:80",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19358,
+                  "src": "91:16:80",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 19352,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "91:7:80",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "90:18:80"
+            },
+            "returnParameters": {
+              "id": 19357,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19356,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19358,
+                  "src": "132:13:80",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 19355,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "132:6:80",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "131:15:80"
+            },
+            "scope": 19359,
+            "src": "78:69:80",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 19360,
+        "src": "57:92:80",
+        "usedErrors": []
+      }
+    ],
+    "src": "32:119:80"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.19+commit.7dd6d404.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.14",
+  "updatedAt": "2023-08-28T08:04:22.877Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

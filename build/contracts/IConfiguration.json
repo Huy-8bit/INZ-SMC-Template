@@ -1,0 +1,1981 @@
+{
+  "contractName": "IConfiguration",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_nftCollection",
+          "type": "address"
+        }
+      ],
+      "name": "InsertNewCollectionAddress",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_collectionAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "uint8",
+          "name": "_nftType",
+          "type": "uint8"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_price",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_totalSupply",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "_baseMetadataUri",
+          "type": "string"
+        },
+        {
+          "internalType": "address",
+          "name": "_creatorAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_payToken",
+          "type": "address"
+        }
+      ],
+      "name": "configCollection",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_collectionAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "string",
+          "name": "_baseMetadataUri",
+          "type": "string"
+        }
+      ],
+      "name": "configCollectionURI",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_newCreator",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_collectionAddress",
+          "type": "address"
+        }
+      ],
+      "name": "updateCreatorCollection",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_collectionAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_payToken",
+          "type": "address"
+        }
+      ],
+      "name": "updatePayTokenCollection",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_nftFactory",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_dappCreator",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_treasury",
+          "type": "address"
+        }
+      ],
+      "name": "updateConfigContract",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_collectionAddress",
+          "type": "address"
+        }
+      ],
+      "name": "getCreatorFromTreasury",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_nftCollection",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_tokenID",
+          "type": "uint256"
+        }
+      ],
+      "name": "getCollectionURI",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_nftCollection",
+          "type": "address"
+        },
+        {
+          "internalType": "uint8",
+          "name": "_nftType",
+          "type": "uint8"
+        }
+      ],
+      "name": "getCollectionPrice",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_collectionAddress",
+          "type": "address"
+        }
+      ],
+      "name": "getCreatorCollection",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_collectionAddress",
+          "type": "address"
+        }
+      ],
+      "name": "getPayTokenCollection",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_collectionAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "uint8",
+          "name": "_tokenType",
+          "type": "uint8"
+        }
+      ],
+      "name": "getNftTypeDetail",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint8",
+              "name": "nftType",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint256",
+              "name": "totalSupply",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "price",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct InZNFTTypeDetail.NFTTypeDetail",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_nftCollection",
+          "type": "address"
+        },
+        {
+          "internalType": "uint8",
+          "name": "_nftType",
+          "type": "uint8"
+        }
+      ],
+      "name": "checkValidMintingAttributes",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getNftCreator",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_nftCollection\",\"type\":\"address\"}],\"name\":\"InsertNewCollectionAddress\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_nftCollection\",\"type\":\"address\"},{\"internalType\":\"uint8\",\"name\":\"_nftType\",\"type\":\"uint8\"}],\"name\":\"checkValidMintingAttributes\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_collectionAddress\",\"type\":\"address\"},{\"internalType\":\"uint8\",\"name\":\"_nftType\",\"type\":\"uint8\"},{\"internalType\":\"uint256\",\"name\":\"_price\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"_totalSupply\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"_baseMetadataUri\",\"type\":\"string\"},{\"internalType\":\"address\",\"name\":\"_creatorAddress\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_payToken\",\"type\":\"address\"}],\"name\":\"configCollection\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_collectionAddress\",\"type\":\"address\"},{\"internalType\":\"string\",\"name\":\"_baseMetadataUri\",\"type\":\"string\"}],\"name\":\"configCollectionURI\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_nftCollection\",\"type\":\"address\"},{\"internalType\":\"uint8\",\"name\":\"_nftType\",\"type\":\"uint8\"}],\"name\":\"getCollectionPrice\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_nftCollection\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_tokenID\",\"type\":\"uint256\"}],\"name\":\"getCollectionURI\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_collectionAddress\",\"type\":\"address\"}],\"name\":\"getCreatorCollection\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_collectionAddress\",\"type\":\"address\"}],\"name\":\"getCreatorFromTreasury\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getNftCreator\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_collectionAddress\",\"type\":\"address\"},{\"internalType\":\"uint8\",\"name\":\"_tokenType\",\"type\":\"uint8\"}],\"name\":\"getNftTypeDetail\",\"outputs\":[{\"components\":[{\"internalType\":\"uint8\",\"name\":\"nftType\",\"type\":\"uint8\"},{\"internalType\":\"uint256\",\"name\":\"totalSupply\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"price\",\"type\":\"uint256\"}],\"internalType\":\"struct InZNFTTypeDetail.NFTTypeDetail\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_collectionAddress\",\"type\":\"address\"}],\"name\":\"getPayTokenCollection\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_nftFactory\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_dappCreator\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_treasury\",\"type\":\"address\"}],\"name\":\"updateConfigContract\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_newCreator\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_collectionAddress\",\"type\":\"address\"}],\"name\":\"updateCreatorCollection\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_collectionAddress\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_payToken\",\"type\":\"address\"}],\"name\":\"updatePayTokenCollection\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"checkValidMintingAttributes(address,uint8)\":{\"details\":\"Function used for all contract call to for validations\",\"params\":{\"_nftCollection\":\"The address of the collection contract need to check\",\"_nftType\":\"The type need to check\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"InsertNewCollectionAddress(address)\":{\"notice\":\"Function allows Factory to add new deployed collection\"},\"checkValidMintingAttributes(address,uint8)\":{\"notice\":\"Function check the rarity is valid or not in the current state of system\"},\"configCollection(address,uint8,uint256,uint256,string,address,address)\":{\"notice\":\"Function config for each Collection\"},\"configCollectionURI(address,string)\":{\"notice\":\"Function config tokenURI() of each Collection\"},\"getCollectionPrice(address,uint8)\":{\"notice\":\"Function allows Dapp Creator call to get price\"},\"getCollectionURI(address,uint256)\":{\"notice\":\"Function get tokenURI() of Collection\"},\"getCreatorCollection(address)\":{\"notice\":\"Function get address Creator Collection From DappCreator\"},\"getCreatorFromTreasury(address)\":{\"notice\":\"Function allows Dapp Creator call to get price\"},\"getNftCreator()\":{\"notice\":\"function allows external to get DaapNFTCreator\"},\"getNftTypeDetail(address,uint8)\":{\"notice\":\"Function get info NftDetail by nftType\"},\"getPayTokenCollection(address)\":{\"notice\":\"Function get oldPayToken Collection\"},\"updateConfigContract(address,address,address)\":{\"notice\":\"Function update new contracts: Factory, DappCreator, InZTreasury\"},\"updateCreatorCollection(address,address)\":{\"notice\":\"Function update new Creator Collection\"},\"updatePayTokenCollection(address,address)\":{\"notice\":\"Function update new payToken Collection\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/minting/interfaces/IConfiguration.sol\":\"IConfiguration\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/minting/interfaces/IConfiguration.sol\":{\"keccak256\":\"0x45e4e1abebf0bf89a6f94d4af727f4525115a46b0d6d74570241a02095d5e29f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5f5efe43ebbf54c19cfb274ce13baed401c1946271134ee4f4191e5f5f725bc7\",\"dweb:/ipfs/Qmcehv3rK9CQt6WhWg7JE7iZQfLQn1KNSX9k3E79pw7Bkv\"]},\"project:/contracts/minting/libraries/InZNFTTypeDetail.sol\":{\"keccak256\":\"0x879ad0af8924a8670259dbc373f7dde53c067fd30faddcd2ccb7f5cb33c16e33\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://00e1907db29436c5ad824597b04c894b1d186178c77653c214618020887584e0\",\"dweb:/ipfs/QmZXzRCoSNfUVtjDxwLFU2pijBA7ygQpTez7SngsxKi1Aq\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.2;\n\nimport \"../libraries/InZNFTTypeDetail.sol\";\n\ninterface IConfiguration {\n    /**\n     *  @notice Function allows Factory to add new deployed collection\n     */\n    function InsertNewCollectionAddress(address _nftCollection) external;\n\n    /**\n     *  @notice Function config for each Collection\n     */\n    function configCollection(\n        address _collectionAddress,\n        uint8 _nftType,\n        uint256 _price,\n        uint256 _totalSupply,\n        string memory _baseMetadataUri,\n        address _creatorAddress,\n        address _payToken\n    ) external;\n\n    /**\n     *  @notice Function config tokenURI() of each Collection\n     */\n    function configCollectionURI(\n        address _collectionAddress,\n        string memory _baseMetadataUri\n    ) external;\n\n    /**\n     *  @notice Function update new Creator Collection\n     */\n    function updateCreatorCollection( \n        address _newCreator,\n        address _collectionAddress\n    ) external;\n\n    /**\n     *  @notice Function update new payToken Collection\n     */\n    function updatePayTokenCollection(\n        address _collectionAddress,\n        address _payToken\n    ) external;\n\n    /**\n     *  @notice Function update new contracts: Factory, DappCreator, InZTreasury\n     */\n    function updateConfigContract(\n        address _nftFactory,\n        address _dappCreator,\n        address _treasury\n    ) external;\n\n    /**\n     *  @notice Function allows Dapp Creator call to get price\n     */\n    function getCreatorFromTreasury(\n        address _collectionAddress\n    ) external view  returns(address);\n\n    /**\n     *  @notice Function get tokenURI() of Collection\n     */\n    function getCollectionURI(\n        address _nftCollection,\n        uint256 _tokenID\n    ) external view returns (string memory);\n\n    /**\n     *  @notice Function allows Dapp Creator call to get price\n     */\n    function getCollectionPrice(\n        address _nftCollection,\n        uint8 _nftType\n    ) external view returns (uint256, address);\n\n    /**\n     *  @notice Function get address Creator Collection From DappCreator\n     */\n    function getCreatorCollection(\n        address _collectionAddress\n    ) external view returns(address);\n\n    /**\n     *  @notice Function get oldPayToken Collection\n     */\n    function getPayTokenCollection(\n        address _collectionAddress\n    ) external view returns(address);\n\n    /**\n     *  @notice Function get info NftDetail by nftType\n     */\n    function getNftTypeDetail(\n        address _collectionAddress, \n        uint8 _tokenType\n    ) external view returns (InZNFTTypeDetail.NFTTypeDetail memory);\n\n    /**\n     *  @notice Function check the rarity is valid or not in the current state of system\n     *  @dev Function used for all contract call to for validations\n     *  @param _nftCollection The address of the collection contract need to check\n     *  @param _nftType The type need to check\n     */\n    function checkValidMintingAttributes(\n        address _nftCollection,\n        uint8 _nftType\n    ) external view returns (bool);\n\n    /**\n     *  @notice function allows external to get DaapNFTCreator\n     */\n    function getNftCreator() external view returns (address);\n}\n",
+  "sourcePath": "/Users/huy8bit/Desktop/DRIVE/JOB/ATOM SOLUTION/TASK/inz-dapp-api/dev/inz-smc/contracts/minting/interfaces/IConfiguration.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/minting/interfaces/IConfiguration.sol",
+    "exportedSymbols": {
+      "IConfiguration": [
+        19110
+      ],
+      "InZNFTTypeDetail": [
+        19520
+      ]
+    },
+    "id": 19111,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 18977,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:72"
+      },
+      {
+        "absolutePath": "project:/contracts/minting/libraries/InZNFTTypeDetail.sol",
+        "file": "../libraries/InZNFTTypeDetail.sol",
+        "id": 18978,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 19111,
+        "sourceUnit": 19521,
+        "src": "57:43:72",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IConfiguration",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 19110,
+        "linearizedBaseContracts": [
+          19110
+        ],
+        "name": "IConfiguration",
+        "nameLocation": "112:14:72",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "documentation": {
+              "id": 18979,
+              "nodeType": "StructuredDocumentation",
+              "src": "133:82:72",
+              "text": "  @notice Function allows Factory to add new deployed collection"
+            },
+            "functionSelector": "d8708898",
+            "id": 18984,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "InsertNewCollectionAddress",
+            "nameLocation": "229:26:72",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 18982,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 18981,
+                  "mutability": "mutable",
+                  "name": "_nftCollection",
+                  "nameLocation": "264:14:72",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 18984,
+                  "src": "256:22:72",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 18980,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "256:7:72",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "255:24:72"
+            },
+            "returnParameters": {
+              "id": 18983,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "288:0:72"
+            },
+            "scope": 19110,
+            "src": "220:69:72",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 18985,
+              "nodeType": "StructuredDocumentation",
+              "src": "295:63:72",
+              "text": "  @notice Function config for each Collection"
+            },
+            "functionSelector": "3c88d904",
+            "id": 19002,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "configCollection",
+            "nameLocation": "372:16:72",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 19000,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 18987,
+                  "mutability": "mutable",
+                  "name": "_collectionAddress",
+                  "nameLocation": "406:18:72",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19002,
+                  "src": "398:26:72",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 18986,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "398:7:72",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 18989,
+                  "mutability": "mutable",
+                  "name": "_nftType",
+                  "nameLocation": "440:8:72",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19002,
+                  "src": "434:14:72",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 18988,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "434:5:72",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 18991,
+                  "mutability": "mutable",
+                  "name": "_price",
+                  "nameLocation": "466:6:72",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19002,
+                  "src": "458:14:72",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 18990,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "458:7:72",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 18993,
+                  "mutability": "mutable",
+                  "name": "_totalSupply",
+                  "nameLocation": "490:12:72",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19002,
+                  "src": "482:20:72",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 18992,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "482:7:72",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 18995,
+                  "mutability": "mutable",
+                  "name": "_baseMetadataUri",
+                  "nameLocation": "526:16:72",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19002,
+                  "src": "512:30:72",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 18994,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "512:6:72",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 18997,
+                  "mutability": "mutable",
+                  "name": "_creatorAddress",
+                  "nameLocation": "560:15:72",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19002,
+                  "src": "552:23:72",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 18996,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "552:7:72",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 18999,
+                  "mutability": "mutable",
+                  "name": "_payToken",
+                  "nameLocation": "593:9:72",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19002,
+                  "src": "585:17:72",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 18998,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "585:7:72",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "388:220:72"
+            },
+            "returnParameters": {
+              "id": 19001,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "617:0:72"
+            },
+            "scope": 19110,
+            "src": "363:255:72",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 19003,
+              "nodeType": "StructuredDocumentation",
+              "src": "624:73:72",
+              "text": "  @notice Function config tokenURI() of each Collection"
+            },
+            "functionSelector": "fab9cdbf",
+            "id": 19010,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "configCollectionURI",
+            "nameLocation": "711:19:72",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 19008,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19005,
+                  "mutability": "mutable",
+                  "name": "_collectionAddress",
+                  "nameLocation": "748:18:72",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19010,
+                  "src": "740:26:72",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19004,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "740:7:72",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 19007,
+                  "mutability": "mutable",
+                  "name": "_baseMetadataUri",
+                  "nameLocation": "790:16:72",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19010,
+                  "src": "776:30:72",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 19006,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "776:6:72",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "730:82:72"
+            },
+            "returnParameters": {
+              "id": 19009,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "821:0:72"
+            },
+            "scope": 19110,
+            "src": "702:120:72",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 19011,
+              "nodeType": "StructuredDocumentation",
+              "src": "828:66:72",
+              "text": "  @notice Function update new Creator Collection"
+            },
+            "functionSelector": "a1bf2f23",
+            "id": 19018,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "updateCreatorCollection",
+            "nameLocation": "908:23:72",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 19016,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19013,
+                  "mutability": "mutable",
+                  "name": "_newCreator",
+                  "nameLocation": "950:11:72",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19018,
+                  "src": "942:19:72",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19012,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "942:7:72",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 19015,
+                  "mutability": "mutable",
+                  "name": "_collectionAddress",
+                  "nameLocation": "979:18:72",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19018,
+                  "src": "971:26:72",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19014,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "971:7:72",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "931:72:72"
+            },
+            "returnParameters": {
+              "id": 19017,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1012:0:72"
+            },
+            "scope": 19110,
+            "src": "899:114:72",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 19019,
+              "nodeType": "StructuredDocumentation",
+              "src": "1019:67:72",
+              "text": "  @notice Function update new payToken Collection"
+            },
+            "functionSelector": "ad0b88cb",
+            "id": 19026,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "updatePayTokenCollection",
+            "nameLocation": "1100:24:72",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 19024,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19021,
+                  "mutability": "mutable",
+                  "name": "_collectionAddress",
+                  "nameLocation": "1142:18:72",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19026,
+                  "src": "1134:26:72",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19020,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1134:7:72",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 19023,
+                  "mutability": "mutable",
+                  "name": "_payToken",
+                  "nameLocation": "1178:9:72",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19026,
+                  "src": "1170:17:72",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19022,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1170:7:72",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1124:69:72"
+            },
+            "returnParameters": {
+              "id": 19025,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1202:0:72"
+            },
+            "scope": 19110,
+            "src": "1091:112:72",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 19027,
+              "nodeType": "StructuredDocumentation",
+              "src": "1209:92:72",
+              "text": "  @notice Function update new contracts: Factory, DappCreator, InZTreasury"
+            },
+            "functionSelector": "bb0345e2",
+            "id": 19036,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "updateConfigContract",
+            "nameLocation": "1315:20:72",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 19034,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19029,
+                  "mutability": "mutable",
+                  "name": "_nftFactory",
+                  "nameLocation": "1353:11:72",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19036,
+                  "src": "1345:19:72",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19028,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1345:7:72",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 19031,
+                  "mutability": "mutable",
+                  "name": "_dappCreator",
+                  "nameLocation": "1382:12:72",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19036,
+                  "src": "1374:20:72",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19030,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1374:7:72",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 19033,
+                  "mutability": "mutable",
+                  "name": "_treasury",
+                  "nameLocation": "1412:9:72",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19036,
+                  "src": "1404:17:72",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19032,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1404:7:72",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1335:92:72"
+            },
+            "returnParameters": {
+              "id": 19035,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1436:0:72"
+            },
+            "scope": 19110,
+            "src": "1306:131:72",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 19037,
+              "nodeType": "StructuredDocumentation",
+              "src": "1443:74:72",
+              "text": "  @notice Function allows Dapp Creator call to get price"
+            },
+            "functionSelector": "28f8c046",
+            "id": 19044,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getCreatorFromTreasury",
+            "nameLocation": "1531:22:72",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 19040,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19039,
+                  "mutability": "mutable",
+                  "name": "_collectionAddress",
+                  "nameLocation": "1571:18:72",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19044,
+                  "src": "1563:26:72",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19038,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1563:7:72",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1553:42:72"
+            },
+            "returnParameters": {
+              "id": 19043,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19042,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19044,
+                  "src": "1619:7:72",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19041,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1619:7:72",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1618:9:72"
+            },
+            "scope": 19110,
+            "src": "1522:106:72",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 19045,
+              "nodeType": "StructuredDocumentation",
+              "src": "1634:65:72",
+              "text": "  @notice Function get tokenURI() of Collection"
+            },
+            "functionSelector": "a0da06b5",
+            "id": 19054,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getCollectionURI",
+            "nameLocation": "1713:16:72",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 19050,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19047,
+                  "mutability": "mutable",
+                  "name": "_nftCollection",
+                  "nameLocation": "1747:14:72",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19054,
+                  "src": "1739:22:72",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19046,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1739:7:72",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 19049,
+                  "mutability": "mutable",
+                  "name": "_tokenID",
+                  "nameLocation": "1779:8:72",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19054,
+                  "src": "1771:16:72",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 19048,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1771:7:72",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1729:64:72"
+            },
+            "returnParameters": {
+              "id": 19053,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19052,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19054,
+                  "src": "1817:13:72",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 19051,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1817:6:72",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1816:15:72"
+            },
+            "scope": 19110,
+            "src": "1704:128:72",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 19055,
+              "nodeType": "StructuredDocumentation",
+              "src": "1838:74:72",
+              "text": "  @notice Function allows Dapp Creator call to get price"
+            },
+            "functionSelector": "89d983ef",
+            "id": 19066,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getCollectionPrice",
+            "nameLocation": "1926:18:72",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 19060,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19057,
+                  "mutability": "mutable",
+                  "name": "_nftCollection",
+                  "nameLocation": "1962:14:72",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19066,
+                  "src": "1954:22:72",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19056,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1954:7:72",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 19059,
+                  "mutability": "mutable",
+                  "name": "_nftType",
+                  "nameLocation": "1992:8:72",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19066,
+                  "src": "1986:14:72",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 19058,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1986:5:72",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1944:62:72"
+            },
+            "returnParameters": {
+              "id": 19065,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19062,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19066,
+                  "src": "2030:7:72",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 19061,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2030:7:72",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 19064,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19066,
+                  "src": "2039:7:72",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19063,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2039:7:72",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2029:18:72"
+            },
+            "scope": 19110,
+            "src": "1917:131:72",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 19067,
+              "nodeType": "StructuredDocumentation",
+              "src": "2054:84:72",
+              "text": "  @notice Function get address Creator Collection From DappCreator"
+            },
+            "functionSelector": "adb8cbee",
+            "id": 19074,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getCreatorCollection",
+            "nameLocation": "2152:20:72",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 19070,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19069,
+                  "mutability": "mutable",
+                  "name": "_collectionAddress",
+                  "nameLocation": "2190:18:72",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19074,
+                  "src": "2182:26:72",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19068,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2182:7:72",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2172:42:72"
+            },
+            "returnParameters": {
+              "id": 19073,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19072,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19074,
+                  "src": "2237:7:72",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19071,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2237:7:72",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2236:9:72"
+            },
+            "scope": 19110,
+            "src": "2143:103:72",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 19075,
+              "nodeType": "StructuredDocumentation",
+              "src": "2252:63:72",
+              "text": "  @notice Function get oldPayToken Collection"
+            },
+            "functionSelector": "29c4c28d",
+            "id": 19082,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getPayTokenCollection",
+            "nameLocation": "2329:21:72",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 19078,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19077,
+                  "mutability": "mutable",
+                  "name": "_collectionAddress",
+                  "nameLocation": "2368:18:72",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19082,
+                  "src": "2360:26:72",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19076,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2360:7:72",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2350:42:72"
+            },
+            "returnParameters": {
+              "id": 19081,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19080,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19082,
+                  "src": "2415:7:72",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19079,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2415:7:72",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2414:9:72"
+            },
+            "scope": 19110,
+            "src": "2320:104:72",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 19083,
+              "nodeType": "StructuredDocumentation",
+              "src": "2430:66:72",
+              "text": "  @notice Function get info NftDetail by nftType"
+            },
+            "functionSelector": "86c2b83d",
+            "id": 19093,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getNftTypeDetail",
+            "nameLocation": "2510:16:72",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 19088,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19085,
+                  "mutability": "mutable",
+                  "name": "_collectionAddress",
+                  "nameLocation": "2544:18:72",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19093,
+                  "src": "2536:26:72",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19084,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2536:7:72",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 19087,
+                  "mutability": "mutable",
+                  "name": "_tokenType",
+                  "nameLocation": "2579:10:72",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19093,
+                  "src": "2573:16:72",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 19086,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2573:5:72",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2526:69:72"
+            },
+            "returnParameters": {
+              "id": 19092,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19091,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19093,
+                  "src": "2619:37:72",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_NFTTypeDetail_$19519_memory_ptr",
+                    "typeString": "struct InZNFTTypeDetail.NFTTypeDetail"
+                  },
+                  "typeName": {
+                    "id": 19090,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 19089,
+                      "name": "InZNFTTypeDetail.NFTTypeDetail",
+                      "nameLocations": [
+                        "2619:16:72",
+                        "2636:13:72"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 19519,
+                      "src": "2619:30:72"
+                    },
+                    "referencedDeclaration": 19519,
+                    "src": "2619:30:72",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_NFTTypeDetail_$19519_storage_ptr",
+                      "typeString": "struct InZNFTTypeDetail.NFTTypeDetail"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2618:39:72"
+            },
+            "scope": 19110,
+            "src": "2501:157:72",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 19094,
+              "nodeType": "StructuredDocumentation",
+              "src": "2664:298:72",
+              "text": "  @notice Function check the rarity is valid or not in the current state of system\n  @dev Function used for all contract call to for validations\n  @param _nftCollection The address of the collection contract need to check\n  @param _nftType The type need to check"
+            },
+            "functionSelector": "c6ce91d4",
+            "id": 19103,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "checkValidMintingAttributes",
+            "nameLocation": "2976:27:72",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 19099,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19096,
+                  "mutability": "mutable",
+                  "name": "_nftCollection",
+                  "nameLocation": "3021:14:72",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19103,
+                  "src": "3013:22:72",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19095,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3013:7:72",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 19098,
+                  "mutability": "mutable",
+                  "name": "_nftType",
+                  "nameLocation": "3051:8:72",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19103,
+                  "src": "3045:14:72",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 19097,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3045:5:72",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3003:62:72"
+            },
+            "returnParameters": {
+              "id": 19102,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19101,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19103,
+                  "src": "3089:4:72",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 19100,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3089:4:72",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3088:6:72"
+            },
+            "scope": 19110,
+            "src": "2967:128:72",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 19104,
+              "nodeType": "StructuredDocumentation",
+              "src": "3101:74:72",
+              "text": "  @notice function allows external to get DaapNFTCreator"
+            },
+            "functionSelector": "6f1e01e6",
+            "id": 19109,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getNftCreator",
+            "nameLocation": "3189:13:72",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 19105,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "3202:2:72"
+            },
+            "returnParameters": {
+              "id": 19108,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19107,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19109,
+                  "src": "3228:7:72",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19106,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3228:7:72",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3227:9:72"
+            },
+            "scope": 19110,
+            "src": "3180:57:72",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 19111,
+        "src": "102:3137:72",
+        "usedErrors": []
+      }
+    ],
+    "src": "32:3208:72"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.19+commit.7dd6d404.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.14",
+  "updatedAt": "2023-08-28T08:04:22.875Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "checkValidMintingAttributes(address,uint8)": {
+        "details": "Function used for all contract call to for validations",
+        "params": {
+          "_nftCollection": "The address of the collection contract need to check",
+          "_nftType": "The type need to check"
+        }
+      }
+    },
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "InsertNewCollectionAddress(address)": {
+        "notice": "Function allows Factory to add new deployed collection"
+      },
+      "checkValidMintingAttributes(address,uint8)": {
+        "notice": "Function check the rarity is valid or not in the current state of system"
+      },
+      "configCollection(address,uint8,uint256,uint256,string,address,address)": {
+        "notice": "Function config for each Collection"
+      },
+      "configCollectionURI(address,string)": {
+        "notice": "Function config tokenURI() of each Collection"
+      },
+      "getCollectionPrice(address,uint8)": {
+        "notice": "Function allows Dapp Creator call to get price"
+      },
+      "getCollectionURI(address,uint256)": {
+        "notice": "Function get tokenURI() of Collection"
+      },
+      "getCreatorCollection(address)": {
+        "notice": "Function get address Creator Collection From DappCreator"
+      },
+      "getCreatorFromTreasury(address)": {
+        "notice": "Function allows Dapp Creator call to get price"
+      },
+      "getNftCreator()": {
+        "notice": "function allows external to get DaapNFTCreator"
+      },
+      "getNftTypeDetail(address,uint8)": {
+        "notice": "Function get info NftDetail by nftType"
+      },
+      "getPayTokenCollection(address)": {
+        "notice": "Function get oldPayToken Collection"
+      },
+      "updateConfigContract(address,address,address)": {
+        "notice": "Function update new contracts: Factory, DappCreator, InZTreasury"
+      },
+      "updateCreatorCollection(address,address)": {
+        "notice": "Function update new Creator Collection"
+      },
+      "updatePayTokenCollection(address,address)": {
+        "notice": "Function update new payToken Collection"
+      }
+    },
+    "version": 1
+  }
+}

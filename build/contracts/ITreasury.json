@@ -1,0 +1,364 @@
+{
+  "contractName": "ITreasury",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_collectionAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_payToken",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "updateBalanceCollection",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_amount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "_collectionAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_payToken",
+          "type": "address"
+        }
+      ],
+      "name": "withdrawFromGateway",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_collectionAddress\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_payToken\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_amount\",\"type\":\"uint256\"}],\"name\":\"updateBalanceCollection\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_amount\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"_collectionAddress\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_payToken\",\"type\":\"address\"}],\"name\":\"withdrawFromGateway\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"updateBalanceCollection(address,address,uint256)\":{\"notice\":\"Function allow update balance to InZTreasury contract\"},\"withdrawFromGateway(uint256,address,address)\":{\"notice\":\"Function allow send Token from Treasury to Gateway\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/minting/interfaces/ITreasury.sol\":\"ITreasury\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/minting/interfaces/ITreasury.sol\":{\"keccak256\":\"0xf9615d367848e360ddde2f5d324647a44ae7d690d57f095e70b36ae89a379e83\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://3e69a3250a344895b5be41eaed6c8f2632b07053866140f5b39f0fb1ea0cf907\",\"dweb:/ipfs/QmUEjuXtFS4jSV8N3gKL6J6iJSdE7s83VmMffd66XPM8YX\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.2;\n\ninterface ITreasury {\n    /**\n     *  @notice Function allow update balance to InZTreasury contract\n     */\n    function updateBalanceCollection(\n        address _collectionAddress,\n        address _payToken,\n        uint256 _amount\n    ) external;\n\n    /**\n     *  @notice Function allow send Token from Treasury to Gateway\n     */\n    function withdrawFromGateway(\n        uint256 _amount,\n        address _collectionAddress,\n        address _payToken\n    ) external;\n\n}\n\n",
+  "sourcePath": "/Users/huy8bit/Desktop/DRIVE/JOB/ATOM SOLUTION/TASK/inz-dapp-api/dev/inz-smc/contracts/minting/interfaces/ITreasury.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/minting/interfaces/ITreasury.sol",
+    "exportedSymbols": {
+      "ITreasury": [
+        19390
+      ]
+    },
+    "id": 19391,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 19369,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:82"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "ITreasury",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 19390,
+        "linearizedBaseContracts": [
+          19390
+        ],
+        "name": "ITreasury",
+        "nameLocation": "67:9:82",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "documentation": {
+              "id": 19370,
+              "nodeType": "StructuredDocumentation",
+              "src": "83:81:82",
+              "text": "  @notice Function allow update balance to InZTreasury contract"
+            },
+            "functionSelector": "71c4d52f",
+            "id": 19379,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "updateBalanceCollection",
+            "nameLocation": "178:23:82",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 19377,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19372,
+                  "mutability": "mutable",
+                  "name": "_collectionAddress",
+                  "nameLocation": "219:18:82",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19379,
+                  "src": "211:26:82",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19371,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "211:7:82",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 19374,
+                  "mutability": "mutable",
+                  "name": "_payToken",
+                  "nameLocation": "255:9:82",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19379,
+                  "src": "247:17:82",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19373,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "247:7:82",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 19376,
+                  "mutability": "mutable",
+                  "name": "_amount",
+                  "nameLocation": "282:7:82",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19379,
+                  "src": "274:15:82",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 19375,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "274:7:82",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "201:94:82"
+            },
+            "returnParameters": {
+              "id": 19378,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "304:0:82"
+            },
+            "scope": 19390,
+            "src": "169:136:82",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 19380,
+              "nodeType": "StructuredDocumentation",
+              "src": "311:78:82",
+              "text": "  @notice Function allow send Token from Treasury to Gateway"
+            },
+            "functionSelector": "b779f02d",
+            "id": 19389,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "withdrawFromGateway",
+            "nameLocation": "403:19:82",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 19387,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19382,
+                  "mutability": "mutable",
+                  "name": "_amount",
+                  "nameLocation": "440:7:82",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19389,
+                  "src": "432:15:82",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 19381,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "432:7:82",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 19384,
+                  "mutability": "mutable",
+                  "name": "_collectionAddress",
+                  "nameLocation": "465:18:82",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19389,
+                  "src": "457:26:82",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19383,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "457:7:82",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 19386,
+                  "mutability": "mutable",
+                  "name": "_payToken",
+                  "nameLocation": "501:9:82",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19389,
+                  "src": "493:17:82",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19385,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "493:7:82",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "422:94:82"
+            },
+            "returnParameters": {
+              "id": 19388,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "525:0:82"
+            },
+            "scope": 19390,
+            "src": "394:132:82",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 19391,
+        "src": "57:472:82",
+        "usedErrors": []
+      }
+    ],
+    "src": "32:499:82"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.19+commit.7dd6d404.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.14",
+  "updatedAt": "2023-08-28T08:04:22.878Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "updateBalanceCollection(address,address,uint256)": {
+        "notice": "Function allow update balance to InZTreasury contract"
+      },
+      "withdrawFromGateway(uint256,address,address)": {
+        "notice": "Function allow send Token from Treasury to Gateway"
+      }
+    },
+    "version": 1
+  }
+}

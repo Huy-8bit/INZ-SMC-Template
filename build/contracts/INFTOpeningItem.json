@@ -1,0 +1,146 @@
+{
+  "contractName": "INFTOpeningItem",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        }
+      ],
+      "name": "mintFromBoxOpening",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"}],\"name\":\"mintFromBoxOpening\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/minting/interfaces/INFTOpeningItem.sol\":\"INFTOpeningItem\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/minting/interfaces/INFTOpeningItem.sol\":{\"keccak256\":\"0x9be4c7832326cd2eed0557134a5525dab6f7e37b440e25b2f5f6da2ee53e9713\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://40bd90121853e3325033aa338b870eb88103abf71e7e210f4abc5e5376c1ce97\",\"dweb:/ipfs/QmPaHLrNQd2Wv1LuibyZh2JNufb1Hj5JKcxL9ZWKGSdBJG\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.2;\n\ninterface INFTOpeningItem {\n    function mintFromBoxOpening(address to) external;\n}\n",
+  "sourcePath": "/Users/huy8bit/Desktop/DRIVE/JOB/ATOM SOLUTION/TASK/inz-dapp-api/dev/inz-smc/contracts/minting/interfaces/INFTOpeningItem.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/minting/interfaces/INFTOpeningItem.sol",
+    "exportedSymbols": {
+      "INFTOpeningItem": [
+        19367
+      ]
+    },
+    "id": 19368,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 19361,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:81"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "INFTOpeningItem",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 19367,
+        "linearizedBaseContracts": [
+          19367
+        ],
+        "name": "INFTOpeningItem",
+        "nameLocation": "67:15:81",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "d2318eae",
+            "id": 19366,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "mintFromBoxOpening",
+            "nameLocation": "98:18:81",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 19364,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19363,
+                  "mutability": "mutable",
+                  "name": "to",
+                  "nameLocation": "125:2:81",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19366,
+                  "src": "117:10:81",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19362,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "117:7:81",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "116:12:81"
+            },
+            "returnParameters": {
+              "id": 19365,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "137:0:81"
+            },
+            "scope": 19367,
+            "src": "89:49:81",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 19368,
+        "src": "57:83:81",
+        "usedErrors": []
+      }
+    ],
+    "src": "32:109:81"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.19+commit.7dd6d404.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.14",
+  "updatedAt": "2023-08-28T08:04:22.877Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

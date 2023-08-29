@@ -1,0 +1,224 @@
+{
+  "contractName": "InZNFTDetail",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/minting/libraries/InZNFTDetail.sol\":\"InZNFTDetail\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/minting/libraries/InZNFTDetail.sol\":{\"keccak256\":\"0x92f110620094d9f34d8605017849f719219397272db25069f4b3cadf32d176ab\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://de35f31e83af8911513f042ade17d72fe773a559932e193bad8f20ad46b65bbe\",\"dweb:/ipfs/QmXj49jxyXUCakQ4skXjHXh1WCi4wagXSagzhLNSDDVfcP\"]}},\"version\":1}",
+  "bytecode": "0x60566037600b82828239805160001a607314602a57634e487b7160e01b600052600060045260246000fd5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea26469706673582212208cfc209412a14b7e550ae741ef2caa84b94fec865a0aa0cdb95abd8476e7a23164736f6c63430008130033",
+  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600080fdfea26469706673582212208cfc209412a14b7e550ae741ef2caa84b94fec865a0aa0cdb95abd8476e7a23164736f6c63430008130033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "57:427:85:-:0;;;;;;;;;;;;;;;-1:-1:-1;;;57:427:85;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "57:427:85:-:0;;;;;;;;",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.2;\n\nlibrary InZNFTDetail {\n    struct NFTDetail {\n        uint8   tokenType;      // type of nft\n        uint256 tokenId;        // tokenId mint to nftAddress\n        uint256 quantity;       // amount of TokenId\n        // string  uri;            // uri (.json) of tokenId metadata\n        bool    isOpened;       // true if box opened. if its not a box, it's always true\n        address owner;          // owner of tokenId\n    }\n}",
+  "sourcePath": "/Users/huy8bit/Desktop/DRIVE/JOB/ATOM SOLUTION/TASK/inz-dapp-api/dev/inz-smc/contracts/minting/libraries/InZNFTDetail.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/minting/libraries/InZNFTDetail.sol",
+    "exportedSymbols": {
+      "InZNFTDetail": [
+        19478
+      ]
+    },
+    "id": 19479,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 19466,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:85"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "InZNFTDetail",
+        "contractDependencies": [],
+        "contractKind": "library",
+        "fullyImplemented": true,
+        "id": 19478,
+        "linearizedBaseContracts": [
+          19478
+        ],
+        "name": "InZNFTDetail",
+        "nameLocation": "65:12:85",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "InZNFTDetail.NFTDetail",
+            "id": 19477,
+            "members": [
+              {
+                "constant": false,
+                "id": 19468,
+                "mutability": "mutable",
+                "name": "tokenType",
+                "nameLocation": "119:9:85",
+                "nodeType": "VariableDeclaration",
+                "scope": 19477,
+                "src": "111:17:85",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint8",
+                  "typeString": "uint8"
+                },
+                "typeName": {
+                  "id": 19467,
+                  "name": "uint8",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "111:5:85",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 19470,
+                "mutability": "mutable",
+                "name": "tokenId",
+                "nameLocation": "166:7:85",
+                "nodeType": "VariableDeclaration",
+                "scope": 19477,
+                "src": "158:15:85",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 19469,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "158:7:85",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 19472,
+                "mutability": "mutable",
+                "name": "quantity",
+                "nameLocation": "228:8:85",
+                "nodeType": "VariableDeclaration",
+                "scope": 19477,
+                "src": "220:16:85",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 19471,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "220:7:85",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 19474,
+                "mutability": "mutable",
+                "name": "isOpened",
+                "nameLocation": "351:8:85",
+                "nodeType": "VariableDeclaration",
+                "scope": 19477,
+                "src": "343:16:85",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 19473,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "343:4:85",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 19476,
+                "mutability": "mutable",
+                "name": "owner",
+                "nameLocation": "441:5:85",
+                "nodeType": "VariableDeclaration",
+                "scope": 19477,
+                "src": "433:13:85",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 19475,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "433:7:85",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "NFTDetail",
+            "nameLocation": "91:9:85",
+            "nodeType": "StructDefinition",
+            "scope": 19478,
+            "src": "84:398:85",
+            "visibility": "public"
+          }
+        ],
+        "scope": 19479,
+        "src": "57:427:85",
+        "usedErrors": []
+      }
+    ],
+    "src": "32:452:85"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.19+commit.7dd6d404.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.14",
+  "updatedAt": "2023-08-28T08:04:22.878Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

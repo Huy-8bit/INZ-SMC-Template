@@ -1,0 +1,146 @@
+{
+  "contractName": "IMarketplaceFactory",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "signer",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"signer\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/mkp/interfaces/IMarketplaceFactory.sol\":\"IMarketplaceFactory\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/mkp/interfaces/IMarketplaceFactory.sol\":{\"keccak256\":\"0xc7dee92fb833755ca3464d784af3bf72d3041acc1b45b7f92ef86dbd5fb3099d\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://bd16cbdfbd5db013c669a8de3b4df1ec53c4992c3986a212aba93f4b4a9d802c\",\"dweb:/ipfs/QmXGYVTXtBfvuVW1i3TGTGVnXiddPPeNef8jWcv7o2YJV7\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.16;\n\ninterface IMarketplaceFactory {\n    function signer() external view returns (address);\n}\n",
+  "sourcePath": "/Users/huy8bit/Desktop/DRIVE/JOB/ATOM SOLUTION/TASK/inz-dapp-api/dev/inz-smc/contracts/mkp/interfaces/IMarketplaceFactory.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/mkp/interfaces/IMarketplaceFactory.sol",
+    "exportedSymbols": {
+      "IMarketplaceFactory": [
+        21917
+      ]
+    },
+    "id": 21918,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 21911,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".16"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:24:103"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IMarketplaceFactory",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 21917,
+        "linearizedBaseContracts": [
+          21917
+        ],
+        "name": "IMarketplaceFactory",
+        "nameLocation": "68:19:103",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "238ac933",
+            "id": 21916,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "signer",
+            "nameLocation": "103:6:103",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 21912,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "109:2:103"
+            },
+            "returnParameters": {
+              "id": 21915,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 21914,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 21916,
+                  "src": "135:7:103",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 21913,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "135:7:103",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "134:9:103"
+            },
+            "scope": 21917,
+            "src": "94:50:103",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 21918,
+        "src": "58:88:103",
+        "usedErrors": []
+      }
+    ],
+    "src": "32:115:103"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.19+commit.7dd6d404.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.14",
+  "updatedAt": "2023-08-28T08:04:22.913Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

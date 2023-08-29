@@ -1,0 +1,579 @@
+{
+  "contractName": "IDappCreator",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "contract ICampaignNFT",
+          "name": "_nftCollection",
+          "type": "address"
+        },
+        {
+          "internalType": "uint8",
+          "name": "_nftType",
+          "type": "uint8"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_amount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_platformFee",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_discount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bool",
+          "name": "_isWhitelistMint",
+          "type": "bool"
+        },
+        {
+          "components": [
+            {
+              "internalType": "uint8",
+              "name": "v",
+              "type": "uint8"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "r",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "s",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "uint256",
+              "name": "deadline",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct IDappCreator.Proof",
+          "name": "_proof",
+          "type": "tuple"
+        },
+        {
+          "internalType": "string",
+          "name": "_callbackData",
+          "type": "string"
+        },
+        {
+          "internalType": "address",
+          "name": "_to",
+          "type": "address"
+        }
+      ],
+      "name": "mintingFromGateway",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract ICampaignNFT\",\"name\":\"_nftCollection\",\"type\":\"address\"},{\"internalType\":\"uint8\",\"name\":\"_nftType\",\"type\":\"uint8\"},{\"internalType\":\"uint256\",\"name\":\"_amount\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"_platformFee\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"_discount\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"_isWhitelistMint\",\"type\":\"bool\"},{\"components\":[{\"internalType\":\"uint8\",\"name\":\"v\",\"type\":\"uint8\"},{\"internalType\":\"bytes32\",\"name\":\"r\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"s\",\"type\":\"bytes32\"},{\"internalType\":\"uint256\",\"name\":\"deadline\",\"type\":\"uint256\"}],\"internalType\":\"struct IDappCreator.Proof\",\"name\":\"_proof\",\"type\":\"tuple\"},{\"internalType\":\"string\",\"name\":\"_callbackData\",\"type\":\"string\"},{\"internalType\":\"address\",\"name\":\"_to\",\"type\":\"address\"}],\"name\":\"mintingFromGateway\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/minting/interfaces/IDappCreator.sol\":\"IDappCreator\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/minting/interfaces/ICampaignNFT.sol\":{\"keccak256\":\"0xbe06ac121c6956aabdc46141ffcba162700e9236d685c7b5bd8ff34934a3d0dc\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5076f2a7cf98716e037b851ea04de339e69183e07ef2a653da2d5e4e0e3d084c\",\"dweb:/ipfs/Qmb19bp8jaFVn3wcMdVuGfVTi6vB4SsJf18GjsWGxWJGee\"]},\"project:/contracts/minting/interfaces/IDappCreator.sol\":{\"keccak256\":\"0xce10b3a6144573cb315f37a7a7df46232847ff49af755a65c07e53df461e203e\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://fee22f18fdaeb216089dc534ff9fb48fb0abd9d4cf4ec54d5be7a8831cab9c05\",\"dweb:/ipfs/QmejVzVq5YdzVBt6umZz5jm8zDiqgBtovLT1gAzCVLeq2b\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.2;\n\nimport \"./ICampaignNFT.sol\";\n\ninterface IDappCreator {\n    /**\n     *      @dev Defines using Structs\n     */\n    struct Proof {\n        uint8 v;\n        bytes32 r;\n        bytes32 s;\n        uint256 deadline;\n    }\n\n    function mintingFromGateway(\n        ICampaignNFT _nftCollection,\n        uint8 _nftType,\n        uint256 _amount,\n        uint256 _platformFee,\n        uint256 _discount,\n        bool _isWhitelistMint,\n        Proof memory _proof,\n        string memory _callbackData,\n        address _to\n    ) external payable;\n}\n",
+  "sourcePath": "/Users/huy8bit/Desktop/DRIVE/JOB/ATOM SOLUTION/TASK/inz-dapp-api/dev/inz-smc/contracts/minting/interfaces/IDappCreator.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/minting/interfaces/IDappCreator.sol",
+    "exportedSymbols": {
+      "ICampaignNFT": [
+        18909
+      ],
+      "IDappCreator": [
+        19146
+      ]
+    },
+    "id": 19147,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 19112,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:73"
+      },
+      {
+        "absolutePath": "project:/contracts/minting/interfaces/ICampaignNFT.sol",
+        "file": "./ICampaignNFT.sol",
+        "id": 19113,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 19147,
+        "sourceUnit": 18910,
+        "src": "57:28:73",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IDappCreator",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 19146,
+        "linearizedBaseContracts": [
+          19146
+        ],
+        "name": "IDappCreator",
+        "nameLocation": "97:12:73",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "IDappCreator.Proof",
+            "id": 19122,
+            "members": [
+              {
+                "constant": false,
+                "id": 19115,
+                "mutability": "mutable",
+                "name": "v",
+                "nameLocation": "200:1:73",
+                "nodeType": "VariableDeclaration",
+                "scope": 19122,
+                "src": "194:7:73",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint8",
+                  "typeString": "uint8"
+                },
+                "typeName": {
+                  "id": 19114,
+                  "name": "uint8",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "194:5:73",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 19117,
+                "mutability": "mutable",
+                "name": "r",
+                "nameLocation": "219:1:73",
+                "nodeType": "VariableDeclaration",
+                "scope": 19122,
+                "src": "211:9:73",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                },
+                "typeName": {
+                  "id": 19116,
+                  "name": "bytes32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "211:7:73",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 19119,
+                "mutability": "mutable",
+                "name": "s",
+                "nameLocation": "238:1:73",
+                "nodeType": "VariableDeclaration",
+                "scope": 19122,
+                "src": "230:9:73",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bytes32",
+                  "typeString": "bytes32"
+                },
+                "typeName": {
+                  "id": 19118,
+                  "name": "bytes32",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "230:7:73",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 19121,
+                "mutability": "mutable",
+                "name": "deadline",
+                "nameLocation": "257:8:73",
+                "nodeType": "VariableDeclaration",
+                "scope": 19122,
+                "src": "249:16:73",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 19120,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "249:7:73",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "Proof",
+            "nameLocation": "178:5:73",
+            "nodeType": "StructDefinition",
+            "scope": 19146,
+            "src": "171:101:73",
+            "visibility": "public"
+          },
+          {
+            "functionSelector": "92b78767",
+            "id": 19145,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "mintingFromGateway",
+            "nameLocation": "287:18:73",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 19143,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19125,
+                  "mutability": "mutable",
+                  "name": "_nftCollection",
+                  "nameLocation": "328:14:73",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19145,
+                  "src": "315:27:73",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_ICampaignNFT_$18909",
+                    "typeString": "contract ICampaignNFT"
+                  },
+                  "typeName": {
+                    "id": 19124,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 19123,
+                      "name": "ICampaignNFT",
+                      "nameLocations": [
+                        "315:12:73"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 18909,
+                      "src": "315:12:73"
+                    },
+                    "referencedDeclaration": 18909,
+                    "src": "315:12:73",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_ICampaignNFT_$18909",
+                      "typeString": "contract ICampaignNFT"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 19127,
+                  "mutability": "mutable",
+                  "name": "_nftType",
+                  "nameLocation": "358:8:73",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19145,
+                  "src": "352:14:73",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 19126,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "352:5:73",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 19129,
+                  "mutability": "mutable",
+                  "name": "_amount",
+                  "nameLocation": "384:7:73",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19145,
+                  "src": "376:15:73",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 19128,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "376:7:73",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 19131,
+                  "mutability": "mutable",
+                  "name": "_platformFee",
+                  "nameLocation": "409:12:73",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19145,
+                  "src": "401:20:73",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 19130,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "401:7:73",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 19133,
+                  "mutability": "mutable",
+                  "name": "_discount",
+                  "nameLocation": "439:9:73",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19145,
+                  "src": "431:17:73",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 19132,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "431:7:73",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 19135,
+                  "mutability": "mutable",
+                  "name": "_isWhitelistMint",
+                  "nameLocation": "463:16:73",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19145,
+                  "src": "458:21:73",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 19134,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "458:4:73",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 19138,
+                  "mutability": "mutable",
+                  "name": "_proof",
+                  "nameLocation": "502:6:73",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19145,
+                  "src": "489:19:73",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Proof_$19122_memory_ptr",
+                    "typeString": "struct IDappCreator.Proof"
+                  },
+                  "typeName": {
+                    "id": 19137,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 19136,
+                      "name": "Proof",
+                      "nameLocations": [
+                        "489:5:73"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 19122,
+                      "src": "489:5:73"
+                    },
+                    "referencedDeclaration": 19122,
+                    "src": "489:5:73",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Proof_$19122_storage_ptr",
+                      "typeString": "struct IDappCreator.Proof"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 19140,
+                  "mutability": "mutable",
+                  "name": "_callbackData",
+                  "nameLocation": "532:13:73",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19145,
+                  "src": "518:27:73",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 19139,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "518:6:73",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 19142,
+                  "mutability": "mutable",
+                  "name": "_to",
+                  "nameLocation": "563:3:73",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19145,
+                  "src": "555:11:73",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19141,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "555:7:73",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "305:267:73"
+            },
+            "returnParameters": {
+              "id": 19144,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "589:0:73"
+            },
+            "scope": 19146,
+            "src": "278:312:73",
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 19147,
+        "src": "87:505:73",
+        "usedErrors": []
+      }
+    ],
+    "src": "32:561:73"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.19+commit.7dd6d404.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.14",
+  "updatedAt": "2023-08-28T08:04:22.875Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

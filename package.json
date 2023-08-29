@@ -1,0 +1,24 @@
+{
+  "name": "sample-marketplace",
+  "version": "1.0.0",
+  "description": "Sample Marketplace",
+  "main": "index.js",
+  "repository": "https://gitlab.rinznetwork.com/defi/sample-marketplace.git",
+  "author": "Pham Anh Tai <phamanhtai0410@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.6.0",
+    "@openzeppelin/contracts-upgradeable": "^4.6.0",
+    "@truffle/hdwallet-provider": "^2.1.9",
+    "dotenv": "^16.0.1",
+    "moralis": "^2.13.0",
+    "truffle": "^5.5.13",
+    "truffle-contract-size": "^2.0.1",
+    "truffle-flatten": "^1.0.6",
+    "truffle-privatekey-provider": "^1.2.0"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-waffle": "^2.0.6",
+    "chai": "^4.3.8"
+  }
+}

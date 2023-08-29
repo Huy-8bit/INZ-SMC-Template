@@ -1,0 +1,327 @@
+{
+  "contractName": "IFactory",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_characterToken",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_newMinter",
+          "type": "address"
+        }
+      ],
+      "name": "setNewMinter",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getCurrentConfiguration",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getCurrentDappCreatorAddress",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"getCurrentConfiguration\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getCurrentDappCreatorAddress\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_characterToken\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_newMinter\",\"type\":\"address\"}],\"name\":\"setNewMinter\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"getCurrentConfiguration()\":{\"notice\":\"Function allows to get the current Nft Configurations\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/minting/interfaces/IFactory.sol\":\"IFactory\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/minting/interfaces/IFactory.sol\":{\"keccak256\":\"0xf006cfcd1a750881adcd79dc401ee44787c00dd54307b3250523f1f2e754ec2b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://684479337b249fb3ffacbe6902577e51dd6211e73b01117a327c1d08a1daa833\",\"dweb:/ipfs/QmUxoruczA3L4aTK4agAc1oRv2m352xN2SyB3VzP8CDymQ\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.2;\n\ninterface IFactory {\n    function setNewMinter(address _characterToken, address _newMinter) external;\n\n    /**\n     *  @notice Function allows to get the current Nft Configurations\n     */\n    function getCurrentConfiguration() external view returns (address);\n    function getCurrentDappCreatorAddress() external view returns (address);\n}\n",
+  "sourcePath": "/Users/huy8bit/Desktop/DRIVE/JOB/ATOM SOLUTION/TASK/inz-dapp-api/dev/inz-smc/contracts/minting/interfaces/IFactory.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/minting/interfaces/IFactory.sol",
+    "exportedSymbols": {
+      "IFactory": [
+        19223
+      ]
+    },
+    "id": 19224,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 19204,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:75"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IFactory",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 19223,
+        "linearizedBaseContracts": [
+          19223
+        ],
+        "name": "IFactory",
+        "nameLocation": "67:8:75",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "8a0449d6",
+            "id": 19211,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setNewMinter",
+            "nameLocation": "91:12:75",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 19209,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19206,
+                  "mutability": "mutable",
+                  "name": "_characterToken",
+                  "nameLocation": "112:15:75",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19211,
+                  "src": "104:23:75",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19205,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "104:7:75",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 19208,
+                  "mutability": "mutable",
+                  "name": "_newMinter",
+                  "nameLocation": "137:10:75",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19211,
+                  "src": "129:18:75",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19207,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "129:7:75",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "103:45:75"
+            },
+            "returnParameters": {
+              "id": 19210,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "157:0:75"
+            },
+            "scope": 19223,
+            "src": "82:76:75",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "documentation": {
+              "id": 19212,
+              "nodeType": "StructuredDocumentation",
+              "src": "164:81:75",
+              "text": "  @notice Function allows to get the current Nft Configurations"
+            },
+            "functionSelector": "9ee984ba",
+            "id": 19217,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getCurrentConfiguration",
+            "nameLocation": "259:23:75",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 19213,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "282:2:75"
+            },
+            "returnParameters": {
+              "id": 19216,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19215,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19217,
+                  "src": "308:7:75",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19214,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "308:7:75",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "307:9:75"
+            },
+            "scope": 19223,
+            "src": "250:67:75",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "71efede9",
+            "id": 19222,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getCurrentDappCreatorAddress",
+            "nameLocation": "331:28:75",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 19218,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "359:2:75"
+            },
+            "returnParameters": {
+              "id": 19221,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19220,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19222,
+                  "src": "385:7:75",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19219,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "385:7:75",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "384:9:75"
+            },
+            "scope": 19223,
+            "src": "322:72:75",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 19224,
+        "src": "57:339:75",
+        "usedErrors": []
+      }
+    ],
+    "src": "32:365:75"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.19+commit.7dd6d404.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.14",
+  "updatedAt": "2023-08-28T08:04:22.876Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "getCurrentConfiguration()": {
+        "notice": "Function allows to get the current Nft Configurations"
+      }
+    },
+    "version": 1
+  }
+}

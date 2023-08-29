@@ -1,0 +1,180 @@
+{
+  "contractName": "IInZNFTMarket",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "getMarketFeePercent",
+      "outputs": [
+        {
+          "internalType": "uint16",
+          "name": "",
+          "type": "uint16"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"getMarketFeePercent\",\"outputs\":[{\"internalType\":\"uint16\",\"name\":\"\",\"type\":\"uint16\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/minting/interfaces/IInZNFTMarket.sol\":\"IInZNFTMarket\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/minting/interfaces/IInZNFTMarket.sol\":{\"keccak256\":\"0xec0856d34abad8a77375b24e0d4e1634e27e32235feec42d447cf169cd12ccaf\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5bb9a0d413ec2764d8b8b77a059da7c6a526df21e98703bc1ecab2eeefd8b3af\",\"dweb:/ipfs/QmUJv7UGR4eQF7ATHthr9v8VsyzxvFTddaUPBx7DA1immA\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.2;\n\ninterface IInZNFTMarket {\n    function getMarketFeePercent(address) external view returns (uint16);\n}",
+  "sourcePath": "/Users/huy8bit/Desktop/DRIVE/JOB/ATOM SOLUTION/TASK/inz-dapp-api/dev/inz-smc/contracts/minting/interfaces/IInZNFTMarket.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/minting/interfaces/IInZNFTMarket.sol",
+    "exportedSymbols": {
+      "IInZNFTMarket": [
+        19316
+      ]
+    },
+    "id": 19317,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 19308,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:78"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IInZNFTMarket",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 19316,
+        "linearizedBaseContracts": [
+          19316
+        ],
+        "name": "IInZNFTMarket",
+        "nameLocation": "67:13:78",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "a8bcb8d8",
+            "id": 19315,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getMarketFeePercent",
+            "nameLocation": "96:19:78",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 19311,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19310,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19315,
+                  "src": "116:7:78",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19309,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "116:7:78",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "115:9:78"
+            },
+            "returnParameters": {
+              "id": 19314,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19313,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19315,
+                  "src": "148:6:78",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint16",
+                    "typeString": "uint16"
+                  },
+                  "typeName": {
+                    "id": 19312,
+                    "name": "uint16",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "148:6:78",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint16",
+                      "typeString": "uint16"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "147:8:78"
+            },
+            "scope": 19316,
+            "src": "87:69:78",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 19317,
+        "src": "57:101:78",
+        "usedErrors": []
+      }
+    ],
+    "src": "32:126:78"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.19+commit.7dd6d404.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.14",
+  "updatedAt": "2023-08-28T08:04:22.877Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

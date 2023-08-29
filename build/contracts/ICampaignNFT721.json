@@ -1,0 +1,258 @@
+{
+  "contractName": "ICampaignNFT721",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "_symbol",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "_name",
+          "type": "string"
+        },
+        {
+          "internalType": "address",
+          "name": "_adminAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_factoryAddress",
+          "type": "address"
+        }
+      ],
+      "name": "initialize",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"string\",\"name\":\"_symbol\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"_name\",\"type\":\"string\"},{\"internalType\":\"address\",\"name\":\"_adminAddress\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_factoryAddress\",\"type\":\"address\"}],\"name\":\"initialize\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/minting/interfaces/ICampaignNFT721.sol\":\"ICampaignNFT721\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0x287b55befed2961a7eabd7d7b1b2839cbca8a5b80ef8dcbb25ed3d4c2002c305\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://bd39944e8fc06be6dbe2dd1d8449b5336e23c6a7ba3e8e9ae5ae0f37f35283f5\",\"dweb:/ipfs/QmPV3FGYjVwvKSgAXKUN3r9T9GwniZz83CxBpM7vyj2G53\"]},\"project:/contracts/minting/interfaces/ICampaignNFT721.sol\":{\"keccak256\":\"0x956169d7e476b6d56abf4bff1264905ac1242f6d635dfa6b622484b9f90c519c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6bb4ce25618aeb66a7ad6f92e2271586daba0398a73ab42bd1b11cc9488c0a09\",\"dweb:/ipfs/QmYy8DeYNhpaw92zAYR9XJZh36s6bfMzsUsND97X7tBhcE\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.2;\n\nimport \"@openzeppelin/contracts/token/ERC20/IERC20.sol\";\n\n\ninterface ICampaignNFT721 {\n    function initialize(\n        string memory _symbol,\n        string memory _name,\n        address _adminAddress,\n        address _factoryAddress\n    ) external;\n}\n\n\n",
+  "sourcePath": "/Users/huy8bit/Desktop/DRIVE/JOB/ATOM SOLUTION/TASK/inz-dapp-api/dev/inz-smc/contracts/minting/interfaces/ICampaignNFT721.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/minting/interfaces/ICampaignNFT721.sol",
+    "exportedSymbols": {
+      "ICampaignNFT721": [
+        18975
+      ],
+      "IERC20": [
+        9468
+      ]
+    },
+    "id": 18976,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 18962,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:71"
+      },
+      {
+        "absolutePath": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "file": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "id": 18963,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 18976,
+        "sourceUnit": 9469,
+        "src": "57:56:71",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "ICampaignNFT721",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 18975,
+        "linearizedBaseContracts": [
+          18975
+        ],
+        "name": "ICampaignNFT721",
+        "nameLocation": "126:15:71",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "8f15b414",
+            "id": 18974,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "initialize",
+            "nameLocation": "157:10:71",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 18972,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 18965,
+                  "mutability": "mutable",
+                  "name": "_symbol",
+                  "nameLocation": "191:7:71",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 18974,
+                  "src": "177:21:71",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 18964,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "177:6:71",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 18967,
+                  "mutability": "mutable",
+                  "name": "_name",
+                  "nameLocation": "222:5:71",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 18974,
+                  "src": "208:19:71",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 18966,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "208:6:71",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 18969,
+                  "mutability": "mutable",
+                  "name": "_adminAddress",
+                  "nameLocation": "245:13:71",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 18974,
+                  "src": "237:21:71",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 18968,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "237:7:71",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 18971,
+                  "mutability": "mutable",
+                  "name": "_factoryAddress",
+                  "nameLocation": "276:15:71",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 18974,
+                  "src": "268:23:71",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 18970,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "268:7:71",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "167:130:71"
+            },
+            "returnParameters": {
+              "id": 18973,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "306:0:71"
+            },
+            "scope": 18975,
+            "src": "148:159:71",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 18976,
+        "src": "116:193:71",
+        "usedErrors": []
+      }
+    ],
+    "src": "32:280:71"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.19+commit.7dd6d404.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.14",
+  "updatedAt": "2023-08-28T08:04:22.874Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
